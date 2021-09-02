@@ -1,0 +1,26 @@
+<?php
+
+use Elogic\MyModule\Block\Widget\ReadMore;
+/**
+ *
+ * @var ReadMore $block;
+ */
+?>
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Elogic_MyModule/js/readMore": {
+                "width": "<?= $block->getWidth() ?>",
+                "height": "<?= $block->getHeight() ?>",
+                "expandHeight": "<?= $block->getExpandHeight() ?>"
+            }
+        }
+    }
+</script>
+<div id="readMore_wrapper" class="readmore_content_wrapper">
+    <p id="readMore_text" class="readMore_text">
+        <?= $block->getText() ?>
+    </p>
+
+<div id="expand_button" class="expand_button">Read more</div>
+</div>

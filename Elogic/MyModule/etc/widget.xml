@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Elogic Widget
+ *
+ * @category Elogic
+ * @Package Elogic/News
+ * @copyright 2021 Elogic
+ */
+-->
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+    <widget class="Elogic\MyModule\Block\Widget\ReadMore" id="elogic_readMore">
+        <label>Elogic Read more Widget</label>
+        <description>Read more widget</description>
+        <parameters>
+            <parameter name="width" xsi:type="text" required="true" visible="true" sort_order="10">
+                <label>Width</label>
+            </parameter>
+            <parameter name="expandHeight" xsi:type="text" required="true" visible="true" sort_order="20">
+                <label>Expended height</label>
+            </parameter>
+            <parameter name="text" xsi:type="text" required="true" visible="true" sort_order="30">
+                <label>Text</label>
+            </parameter>
+        </parameters>
+    </widget>
+</widgets>
