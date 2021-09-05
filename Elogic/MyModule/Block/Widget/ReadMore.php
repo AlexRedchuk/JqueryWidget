@@ -19,7 +19,7 @@ use Magento\Widget\Block\BlockInterface;
 class ReadMore extends Template implements BlockInterface
 {
     /**
-     * Template for ajax.
+     * Template for read more block.
      *
      * @var string
      */
@@ -28,22 +28,22 @@ class ReadMore extends Template implements BlockInterface
     /**
      * Get block width.
      *
-     * @return int
+     * @return string
      */
-    public function getWidth():int
+    public function getWidth():string
     {
-        return $this->getData('width');
+        return $this->getData('width') . "px";
     }
 
 
     /**
-     * Get template.
+     * Get text.
      *
-     * @return int
+     * @return string
      */
-    public function getExpandHeight(): int
+    public function getExpandText(): string
     {
-        return $this->getData('expandHeight');
+        return $this->getData('expand_text');
     }
 
     /**
@@ -53,7 +53,7 @@ class ReadMore extends Template implements BlockInterface
      */
     public function getText(): string
     {
-        return $this->getData('text');
+        return $this->getData('readmore_text');
     }
 
 }

@@ -15,13 +15,13 @@
         <description>Read more widget</description>
         <parameters>
             <parameter name="width" xsi:type="text" required="true" visible="true" sort_order="10">
-                <label>Width</label>
+                <label>Width of read more block(numeric)</label>
             </parameter>
-            <parameter name="expandHeight" xsi:type="text" required="true" visible="true" sort_order="20">
-                <label>Expended height</label>
+            <parameter name="readmore_text" xsi:type="text" required="true" visible="true" sort_order="20">
+                <label>Visible text</label>
             </parameter>
-            <parameter name="text" xsi:type="text" required="true" visible="true" sort_order="30">
-                <label>Text</label>
+            <parameter name="expand_text" xsi:type="text" required="true" visible="true" sort_order="30">
+                <label> Expanding text</label>
             </parameter>
         </parameters>
     </widget>

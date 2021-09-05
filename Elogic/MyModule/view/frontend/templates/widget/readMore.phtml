@@ -10,17 +10,17 @@ use Elogic\MyModule\Block\Widget\ReadMore;
     {
         "*": {
             "Elogic_MyModule/js/readMore": {
-                "width": "<?= $block->getWidth() ?>",
-                "height": "<?= $block->getHeight() ?>",
-                "expandHeight": "<?= $block->getExpandHeight() ?>"
+                "width": "<?= $block->getWidth() ?>"
             }
         }
     }
 </script>
-<div id="readMore_wrapper" class="readmore_content_wrapper">
-    <p id="readMore_text" class="readMore_text">
+<div style="width: <?= $block->getWidth() ?>" id="readMore_wrapper" class="readmore_content_wrapper">
+    <span id="readMore_text" class="readMore_text">
         <?= $block->getText() ?>
-    </p>
-
+    </span>
+    <div style="display: none" id="expand_text">
+        <?= $block->getExpandText() ?>
+    </div>
 <div id="expand_button" class="expand_button">Read more</div>
 </div>
